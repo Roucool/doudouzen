@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+ul,p, h2, h3, h4, body{
+    font-family: Quicksand, verdana, sans-serif;
+    line-height: 1.5em;
+}
+.globalcontent{
+    max-width: 60.9375%;
+    margin: 0 auto;   
+}
+.logo{
+    width: 100%;
+}
+header{
+    background-color:#bbbcdb;
+    height: 32vh;
+}
+
+/* -->-->-->---------- nav ----------<--<--<-- */
+
+.nav{
+    margin: 2% 0 5% 0;     
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    width: 25%;   
+}
+.nav a{
+    text-decoration: none;
+    background-color: #bbbcdb;
+    color: #fff;
+    padding: 5% 5% 5% 5%;
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+}
+.nav a:hover{
+    color: #fff;
+    background-color: #8486da;
+}
+.actif{
+    border:1px solid #000 !important;
+}
+/* -->-->-->---------- PAGE D'ACCUEIL ----------<--<--<-- */
+article{
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #bbbcdb;
+    margin: 2% auto;
+    padding: 3%;
+    width: 90%;
+    display:flex;
+}
+figure img{
+    width: 70%;
+}
+.presentation{
+    width: 65%;
+}
+.presentation h2{
+    font-size: 1.5em;
+    color: #8486da;
+}
+.presentation h3{
+    margin: 3% 0 0 0;
+    font-size: 1.3em;
+    color: #8486da;
+}
+.presentation p{
+    margin: 3% 0 0 0;
+}
+.focus{
+    font-weight: bold;
+    text-decoration:underline;
+}
+.focus2{
+    font-weight: bold;
+}
+.presentation a{
+    display: flex;
+    margin: 2% 0 0 0;
+}
+article a{
+    display:flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color:#8486da;
+    margin: 5% 0 0 0;
+}
+article a:hover{
+    color:#000;
+}
+
+/* -->-->-->---------- PAGES ----------<--<--<-- */
+.mediumthumbnail img{
+    width: 65%;
+}
+.bigthumbnail img{
+    width: 85%;
+}
+.psychomotricite{
+    flex-wrap: wrap;
+}
+.massage{
+    flex-wrap: wrap;
+}
+.parentalite{
+    flex-wrap: wrap;
+}
+.parentalite h2{
+    margin-bottom: 2%;
+}
+.info1{
+    display: flex; 
+    width: 100%;
+}
+.aside{
+    width: 50%;
+    /*position: relative;
+    left: -5%;*/
+}
+.info1 h2{
+    width: 100%;
+    font-size: 2em;
+    color: #8486da;
+}
+.info1 h3{
+    width: 100%;
+    margin: 3% 0 2% 0;
+    font-size: 1.3em;
+    color: #8486da;
+}
+.info2{
+    width: 100%;
+}
+.info2 h3{
+    margin: 3% 0 2% 0;
+    font-size: 1.3em;
+    color: #8486da;
+}
+.info2 h4{
+    margin: 1% 0 1% 0;
+    font-size: 1em;
+    color: #41438d;
+}
+.pave{
+    margin: 2% 0 2% 0;
+}
+/* -->-->-->---------- FOOTER ----------<--<--<-- */
+footer{
+    clear: both;
+    background: #bbbcdb;
+    padding: 5% 0;
+    margin: 10% 0 0 0%;
+}
+footer p{
+    color:#fff;
+    padding: 0 0 0 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.maillink{
+    color:#fff;
+    text-decoration: none;
+}
+.maillink:hover{
+    color: #8486da;
+}
+.location{ 
+    color:#fff;
+    text-decoration: none;
+}
+.location:hover{
+    color: #8486da;
+}
+/* -->-->-->---------- MEDIA QUERIES : ACCUEIL ----------<--<--<-- */
+
+
+@media screen and (max-width: 1024px) { /* -->-->--> SMALL SCREEN <--<--<-- */
+    .globalcontent{
+        max-width: 100%;
+    }
+    header{
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 768px) { /* -->-->--> TABLET <--<--<-- */
+    .globalcontent{
+        max-width: 100%;
+    }
+    header{
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 480px) { /* -->-->--> SMARTPHONE <--<--<-- */
+    .globalcontent{
+        max-width: 100%;
+    }
+    header{
+        height: 15vh;
+        background-color:#bbbcdb;
+    }
+    /*.nav{
+        margin: 2% 0 5% 0;
+        display: flex;
+        flex-direction: column;   
+    }
+    .nav ul{
+        flex-wrap: wrap;
+    }*/
+    .nav .menu{
+        margin: 2% 0 5% 0;
+        display: flex;
+        flex-direction: column;  
+        flex-wrap: wrap; 
+    }
+    .nav ul li{
+        width: 100%;   
+    }
+    .nav a{
+        text-decoration: none;
+        background-color: #bbbcdb;
+        color: #fff;
+        padding: 2% 0 2% 0;
+        display: block;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .overview{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .overview figure img{
+        width: 100%;
+    }
+    .presentation{
+        width: 100%;
+    }
+    .presentation h2{
+        margin-top: 5%;
+    }
+
+    /* --> Psychomotricite <-- */
+
+    .info1{
+        flex-wrap: wrap;
+    }
+    .info1 figure img{
+        width: 100%;
+    }
+    .aside{
+        width: 100%;
+    }
+    .psychomotricite .info2 p{
+        margin-bottom: 3%;
+    }
+}
+

@@ -9,10 +9,12 @@ ul,p, h2, h3, h4, body{
 }
 .logo{
     width: 100%;
+    height: auto;
 }
 header{
     background-color:#bbbcdb;
-    height: 32vh;
+    width: 100%;
+    height: auto;
 }
 
 /* -->-->-->---------- nav ----------<--<--<-- */
@@ -183,27 +185,17 @@ footer p{
     .globalcontent{
         max-width: 100%;
     }
-    header{
-        height: 20vh;
-    }
 }
 
 @media screen and (max-width: 768px) { /* -->-->--> TABLET <--<--<-- */
     .globalcontent{
         max-width: 100%;
     }
-    header{
-        height: 25vh;
-    }
 }
 
 @media screen and (max-width: 480px) { /* -->-->--> SMARTPHONE <--<--<-- */
     .globalcontent{
         max-width: 100%;
-    }
-    header{
-        height: 15vh;
-        background-color:#bbbcdb;
     }
     /*.nav{
         margin: 2% 0 5% 0;

@@ -45,7 +45,7 @@ header{
     border:1px solid #000 !important;
 }
 /* -->-->-->---------- PAGE D'ACCUEIL ----------<--<--<-- */
-article{
+.overview{
     border-radius: 20px;
     border-style: solid;
     border-width: 3px;
@@ -53,10 +53,14 @@ article{
     margin: 2% auto;
     padding: 3%;
     width: 90%;
-    display:flex;
+    display:flex; 
 }
-figure img{
-    width: 70%;
+img{
+    width: 100%;
+}
+.imageaccueil{
+    width: 30%;
+    margin-right: 3%;
 }
 .presentation{
     width: 65%;
@@ -95,21 +99,57 @@ article a:hover{
     color:#000;
 }
 
+/* -->-->-->---------- FOOTER ----------<--<--<-- */
+footer{
+    clear: both;
+    background: #bbbcdb;
+    margin: 10% 0 0 0%;
+    display: flex;
+    flex-direction: column;
+}
+footer p{
+    color:#fff;
+    margin-top: 4%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;   
+}
+.footerlink{
+    color:#fff;
+    text-decoration: none;
+}
+.footerlink:hover{
+    color: #8486da;
+}
+.location:hover{
+    color: #8486da;
+}
+.coup2pouce{
+    display: flex;
+    font-size: 0.9em;
+    justify-content: flex-end;
+    margin: 2% 2% 1% 0;
+}
+
 /* -->-->-->---------- PAGES ----------<--<--<-- */
+.article{
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #bbbcdb;
+    margin: 2% auto;
+    padding: 3%;
+    width: 90%;
+    display:flex; 
+    flex-wrap: wrap;
+}
 .mediumthumbnail img{
-    width: 65%;
+    /*width: 65%;*/
+    max-width: auto;
 }
 .bigthumbnail img{
-    width: 85%;
-}
-.psychomotricite{
-    flex-wrap: wrap;
-}
-.massage{
-    flex-wrap: wrap;
-}
-.parentalite{
-    flex-wrap: wrap;
+    /*width: 85%;*/
+    max-width: auto;
 }
 .parentalite h2{
     margin-bottom: 2%;
@@ -120,6 +160,7 @@ article a:hover{
 }
 .aside{
     width: 50%;
+    padding: 3%;
     /*position: relative;
     left: -5%;*/
 }
@@ -148,63 +189,28 @@ article a:hover{
     color: #41438d;
 }
 .pave{
-    margin: 2% 0 2% 0;
+    margin: 3% 0 3% 0;
 }
-/* -->-->-->---------- FOOTER ----------<--<--<-- */
-footer{
-    clear: both;
-    background: #bbbcdb;
-    padding: 5% 0;
-    margin: 10% 0 0 0%;
-}
-footer p{
-    color:#fff;
-    padding: 0 0 0 5%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.3em;
-}
-.maillink{
-    color:#fff;
-    text-decoration: none;
-}
-.maillink:hover{
-    color: #8486da;
-}
-.location{ 
-    color:#fff;
-    text-decoration: none;
-}
-.location:hover{
-    color: #8486da;
-}
+
 /* -->-->-->---------- MEDIA QUERIES : ACCUEIL ----------<--<--<-- */
 
-
-@media screen and (max-width: 1024px) { /* -->-->--> SMALL SCREEN <--<--<-- */
+@media screen and (max-width: 1200px) { /* -->-->--> LARGE SCREEN <--<--<-- */
     .globalcontent{
         max-width: 100%;
     }
+    .imageaccueil{
+        width: 50%;
+    }
 }
 
+@media screen and (max-width: 992px) { /* -->-->--> SMALL SCREEN <--<--<-- */
+
+}
 @media screen and (max-width: 768px) { /* -->-->--> TABLET <--<--<-- */
-    .globalcontent{
-        max-width: 100%;
-    }
+
 }
 
-@media screen and (max-width: 480px) { /* -->-->--> SMARTPHONE <--<--<-- */
-    .globalcontent{
-        max-width: 100%;
-    }
-    /*.nav{
-        margin: 2% 0 5% 0;
-        display: flex;
-        flex-direction: column;   
-    }
-    .nav ul{
-        flex-wrap: wrap;
-    }*/
+@media screen and (max-width: 600px) { /* -->-->--> SMARTPHONE <--<--<-- */
     .nav .menu{
         margin: 2% 0 5% 0;
         display: flex;
@@ -215,19 +221,13 @@ footer p{
         width: 100%;   
     }
     .nav a{
-        text-decoration: none;
-        background-color: #bbbcdb;
-        color: #fff;
         padding: 2% 0 2% 0;
-        display: block;
-        font-size: 1.2em;
         text-align: center;
     }
     .overview{
-        display: flex;
         flex-wrap: wrap;
     }
-    .overview figure img{
+    .imageaccueil{
         width: 100%;
     }
     .presentation{

@@ -145,25 +145,22 @@ footer p{
 }
 .mediumthumbnail img{
     /*width: 65%;*/
-    max-width: auto;
+    width: 45%;
+    float: left;
+    margin-right: 3%;
 }
 .bigthumbnail img{
-    /*width: 85%;*/
-    max-width: auto;
+    width: 45%;
+    float: left;
+    margin-right: 3%;
 }
 .parentalite h2{
     margin-bottom: 2%;
 }
-.info1{
+/*.info1{
     display: flex; 
     width: 100%;
-}
-.aside{
-    width: 50%;
-    padding: 3%;
-    /*position: relative;
-    left: -5%;*/
-}
+}*/
 .info1 h2{
     width: 100%;
     font-size: 2em;
@@ -240,6 +237,7 @@ footer p{
     /* --> Psychomotricite <-- */
 
     .info1{
+        display: flex;
         flex-wrap: wrap;
     }
     .info1 figure img{
@@ -250,6 +248,12 @@ footer p{
     }
     .psychomotricite .info2 p{
         margin-bottom: 3%;
+    }
+    .mediumthumbnail img{
+        width: 100%;
+    }
+    .bigthumbnail img{
+        width: 100%;
     }
 }
 
